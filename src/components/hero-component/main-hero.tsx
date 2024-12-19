@@ -1,7 +1,7 @@
 function MainHero() {
   return (
-    <div>
-      <img src="/public/img/main-hero.png" className="mt-10 pt-[85px]" />
+    <div className="">
+      <img src="/public/img/main-hero.png" className="" />
     </div>
   );
 }
