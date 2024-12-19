@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      sans: ['Montserrat'],
+    },
+    backgroundImage: theme => ({
+      'hero-pattern': "url('/public/img/background.png')",
+     })},
   },
   plugins: [],
 }
