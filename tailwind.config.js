@@ -10,8 +10,9 @@ export default {
       sans: ['Montserrat'],
     },
     backgroundImage: theme => ({
-      'background-pattern': "url('/public/img/background.png')",
-      'hero-pattern': "url('/public/img/main-hero.png')"
+      'background-pattern': "url('/public/img/main-background.png')",
+      'hero-pattern': "url('/public/img/main-hero.png')",
+      'about-background-pattern': "url('/public/img/about-background.png')"
      })},
   },
   plugins: [],
