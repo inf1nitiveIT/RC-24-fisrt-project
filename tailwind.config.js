@@ -12,7 +12,8 @@ export default {
     backgroundImage: theme => ({
       'background-pattern': "url('/public/img/main-background.png')",
       'hero-pattern': "url('/public/img/main-hero.png')",
-      'about-background-pattern': "url('/public/img/about-background.png')"
+      'about-background-pattern': "url('/public/img/about-background.png')",
+      'form-background-pattern': "url('/public/img/form-background.png')"
      })},
   },
   plugins: [],

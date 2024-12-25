@@ -13,7 +13,7 @@ function MainInfo() {
         </p>
       </div>
 
-      <Button />
+      <Button name={'Get in Touch'}/>
     </div>
   );
 }
