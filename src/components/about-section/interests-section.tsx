@@ -16,7 +16,7 @@ function InterestsSection({ data, title }: InterestsSectionComponentProps) {
     <div>
       <h2 className="text-[24px] leading-[36px] font-bold text-[#27272A] pb-11">{title}</h2>
       <ul className="space-y-[44px]">
-        {data.map((item) => (
+        {data.map((item, index) => (
           <li key={item.id} className="flex flex-col items-start">
             <div className="flex items-center w-full">
               <div className="flex items-center justify-center">
@@ -39,7 +39,9 @@ function InterestsSection({ data, title }: InterestsSectionComponentProps) {
                 <p className="text-[20px] leading-[30px] text-[#27272A]">{item.description}</p>
               </div>
             </div>
-            {!item.icon && <hr className="w-full border-t border-gray-300 mt-[16px]" />}
+            {!item.icon && index !== data.length - 1 && (
+              <hr className="w-full border-t border-gray-300 mt-[16px]" />
+            )}
           </li>
         ))}
       </ul>
