@@ -17,7 +17,7 @@ function AboutSection() {
         >
           <img
             className="w-[256px] h-[256px] lg:w-[364px] lg:h-[364px] object-cover"
-            src="/public/img/about-hero-picture.png"
+            src="/RC-24-third-project/img/about-hero-picture.png"
             alt="Hero"
           />
         </div>

@@ -11,7 +11,7 @@ function Button({name, type}: ButtonProps) {
   hover:bg-[#6c2bd9] active:scale-95 active:bg-[#5a23c8] active:border-[#9a71f5] border-2 border-transparent transition transform duration-150"
     >
       <span className="text-base font-semibold mr-3">{name}</span>
-      <img src="/img/button-icon.svg" alt="Icon" className="w-6 h-6" />
+      <img src="/RC-24-third-project/img/button-icon.svg" alt="Icon" className="w-6 h-6" />
     </button>
   );
 
