@@ -1,15 +1,15 @@
 import { HelmetProvider } from 'react-helmet-async';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router , Route, Routes } from 'react-router-dom';
 import MainPage from '../../pages/main-page/main-page';
 
 function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path={''} element={<MainPage />}/>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </HelmetProvider>
   );
 }

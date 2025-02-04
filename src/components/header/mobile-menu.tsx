@@ -22,7 +22,7 @@ function MobileMenu({ onClose }: MobileMenuProps) {
             href={link.to}
             key={link.id}
             className="text-2xl font-semibold text-gray-900 py-4 px-6 text-center hover:bg-gray-200 w-full"
-            onClick={onClose} // Закрывать меню при переходе
+            onClick={onClose}
           >
             {link.text}
           </a>

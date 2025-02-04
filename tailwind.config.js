@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-      sans: ['Montserrat'],
-    },
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     backgroundImage: theme => ({
       'background-pattern': "url('/public/img/main-background.png')",
       'hero-pattern': "url('/public/img/main-hero.png')",

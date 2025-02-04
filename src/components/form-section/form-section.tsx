@@ -44,18 +44,18 @@ function FormSection() {
     errors.name = '';
   };
 
-  const getIconSrc = () => {
-    if (errors.email) {
+  const getIconSrc = (field: string) => {
+    if (errors[field as keyof Errors]) {
       return '/public/img/form-error-icon.svg';
     }
-    if (formState.email) {
-      return '/public/img/form-mail-active-icon.svg';
+    if (formState[field as keyof FormState]) {
+      return `/public/img/form-${field}-active-icon.svg`;
     }
-    return '/public/img/form-mail-icon.svg';
+    return `/public/img/form-${field}-icon.svg`;
   };
 
   return (
-    <div className="flex justify-center items-center bg-form-background-pattern bg-no-repeat bg-center py-[70px]">
+    <div id='get in touch' className="flex justify-center items-center bg-form-background-pattern bg-no-repeat bg-center py-[70px]">
       <form
         onSubmit={handleSubmit}
         className="bg-white p-12 rounded-lg shadow-lg w-full max-w-2xl"
@@ -75,11 +75,7 @@ function FormSection() {
               } rounded-lg px-3 py-2 focus-within:border-[#7E3AF2] hover:border-[#7E3AF2] transition-colors`}
             >
               <img
-                src={
-                  formState.name
-                    ? '/public/img/form-name-active-icon.svg'
-                    : '/public/img/form-name-icon.svg'
-                }
+                src={getIconSrc('name')}
                 alt="Name icon"
                 className={'h-5 w-5'}
               />
@@ -108,8 +104,9 @@ function FormSection() {
               } rounded-lg px-3 py-2 focus-within:border-[#7E3AF2] hover:border-[#7E3AF2] transition-colors`}
             >
               <img
-                src={getIconSrc()}
+                src={getIconSrc('email')}
                 alt="Email icon"
+                className={'h-5 w-5'}
               />
               <input
                 id="email"
@@ -144,7 +141,7 @@ function FormSection() {
         </div>
         {/* Submit */}
         <div className="mt-10">
-          <Button name={'Submit'} />
+          <Button name={'Submit'} type={'Submit'}/>
         </div>
       </form>
     </div>
