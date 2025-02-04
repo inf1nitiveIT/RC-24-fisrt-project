@@ -5,9 +5,9 @@ export const links = [
 ];
 
 export const interestsInfo = [
-  { id: 1, title: 'Music', description: 'Indie rock | Reggae', icon: '/public/img/interests-music-icon.svg' },
-  { id: 2, title: 'Art', description: 'Edvard Munch | Frida Kahlo', icon: '/public/img/interests-art-icon.svg' },
-  { id: 3, title: 'Photography', description: 'Portraits', icon: '/public/img/interests-photo-icon.svg' },
+  { id: 1, title: 'Music', description: 'Indie rock | Reggae', icon: '/RC-24-fisrt-project/img/interests-music-icon.svg' },
+  { id: 2, title: 'Art', description: 'Edvard Munch | Frida Kahlo', icon: '/RC-24-fisrt-project/img/interests-art-icon.svg' },
+  { id: 3, title: 'Photography', description: 'Portraits', icon: '/RC-24-fisrt-project/img/interests-photo-icon.svg' },
 ];
 
 export const educationInfo = [

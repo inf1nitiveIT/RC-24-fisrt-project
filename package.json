@@ -2,7 +2,7 @@
   "name": "rc-24-fisrt-project",
   "version": "14.0.0",
   "type": "module",
-  "homepage": "https://inf1nitiveIT.github.io/RC-24-first-project",
+  "homepage": "https://inf1nitiveIT.github.io/RC-24-fisrt-project",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",

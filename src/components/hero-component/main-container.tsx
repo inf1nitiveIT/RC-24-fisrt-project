@@ -23,7 +23,7 @@ function MainContainer() {
       </div>
 
       <div className="flex justify-end sm:max-w-[50%] w-full shrink-0 lg:pr-10">
-        <img src="/public/img/main-hero.png" className="w-[80%] sm:w-[80%] lg:w-[80%]" alt="Nick" />
+        <img src="/RC-24-fisrt-project/img/main-hero.png" className="w-[80%] sm:w-[80%] lg:w-[80%]" alt="Nick" />
       </div>
     </section>
   );

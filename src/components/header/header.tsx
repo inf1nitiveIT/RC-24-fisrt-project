@@ -21,7 +21,7 @@ function Header() {
           className="block pr-5 md:hidden text-2xl"
           onClick={handleToggleMenu}
         >
-          <img src='/public/img/header-menu-button.png'/> {/* Гамбургер-кнопка */}
+          <img src='/RC-24-fisrt-project/img/header-menu-button.png'/>
         </button>
       </div>
       <hr className="border-t border-gray-300" />

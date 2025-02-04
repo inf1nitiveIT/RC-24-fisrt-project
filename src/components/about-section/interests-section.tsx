@@ -1,11 +1,10 @@
-type InterestsSectionProps = {
+interface InterestsSectionProps {
   id: number;
   title: string;
   description: string;
   icon?: string;
   iconText?: string;
-};
-
+}
 interface InterestsSectionComponentProps {
   data: InterestsSectionProps[];
   title: string;

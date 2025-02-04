@@ -5,7 +5,7 @@ import { interestsInfo, educationInfo } from '../../utils/const';
 function AboutSection() {
   return (
     <section id="about" className="relative bg-[#FCFBFA] px-4 md:px-8 lg:pl-[85px] mb-[100px] flex flex-col">
-      <h1 className="mt-[50px] md:mt-20 lg:mt-[100px] md:text-[28px] lg:text-[32px] leading-[32px] md:leading-[40px] lg:leading-[48px] font-bold text-[#27272A] mb-10 md:mb-15 lg:mb-20">
+      <h1 className="mt-[50px] md:mt-20 lg:mt-[100px] md:text-[28px] lg:text-[32px] leading-8 md:leading-10 lg:leading-[48px] font-bold text-[#27272A] mb-10 md:mb-15 lg:mb-20">
         About me
       </h1>
 
@@ -17,7 +17,7 @@ function AboutSection() {
         >
           <img
             className="w-[256px] h-[256px] lg:w-[364px] lg:h-[364px] object-cover"
-            src="/public/img/about-hero-picture.png"
+            src="/RC-24-fisrt-project/img/about-hero-picture.png"
             alt="Hero"
           />
         </div>

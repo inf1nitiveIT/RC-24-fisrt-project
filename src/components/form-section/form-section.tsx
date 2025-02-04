@@ -40,18 +40,20 @@ function FormSection() {
       [name]: value,
     }));
 
-    errors.email = '';
-    errors.name = '';
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: '',
+    }));
   };
 
   const getIconSrc = (field: string) => {
     if (errors[field as keyof Errors]) {
-      return '/public/img/form-error-icon.svg';
+      return '/RC-24-fisrt-project/img/form-error-icon.svg';
     }
     if (formState[field as keyof FormState]) {
-      return `/public/img/form-${field}-active-icon.svg`;
+      return `/RC-24-fisrt-project/img/form-${field}-active-icon.svg`;
     }
-    return `/public/img/form-${field}-icon.svg`;
+    return `/RC-24-fisrt-project/img/form-${field}-icon.svg`;
   };
 
   return (
